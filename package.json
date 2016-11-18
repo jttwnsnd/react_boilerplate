@@ -1,0 +1,32 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "A starting point for developers to begin using the ReactJS framework using NodeJS, Webpack, and Babel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d  && cp  src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --port 8080",
+    "build:prod": "webpack -p  && cp  src/index.html dist/index.html"
+  },
+  "keywords": [
+    "reactjs",
+    "babel",
+    "webpack",
+    "boilerplate"
+  ],
+  "author": "JT Townsend",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
