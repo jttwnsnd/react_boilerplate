@@ -8,7 +8,7 @@ import { Home } from "./components/Home";
 class App extends React.Component {
   render() {
 		return (
-			<div className="container">
+			<div>
         <Home/>
 			</div>
 		);
